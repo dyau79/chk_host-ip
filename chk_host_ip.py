@@ -1,3 +1,18 @@
+"""
+This script does the following:
+
+We import necessary modules: subprocess for running the ping command, platform for determining the operating system, and time for adding a delay between checks.
+The ping() function uses the appropriate ping command based on the operating system (Windows or Unix-based) to check if an IP is reachable.
+The check_uptime() function reads IP addresses from a file, pings each one, and returns a dictionary with the status of each IP.
+The main() function runs an infinite loop that checks the uptime every 60 seconds and prints the results.
+To use this script:
+
+Create a text file (e.g., ip_addresses.txt) with one IP address per line.
+Save the Python script (e.g., as uptime_checker.py).
+Run the script using python uptime_checker.py.
+The script will continuously check the uptime of the IP addresses every 60 seconds and print the results.
+"""
+
 import subprocess
 import platform
 import time
